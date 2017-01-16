@@ -3,8 +3,7 @@
 <head>
     <title>Flüssiges Layout mit Media-Queries</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
     <style type="text/css">
     <!--
 
@@ -18,11 +17,11 @@
 		}
 				
 		#container {
-          max-width:    960px;   /* "max-width" statt nur "width" */
+          max-width:    960px;                  /* "max-width" statt nur "width" */
 		  background:   yellow;
 		  padding:      1.0416666666666665%;    /* Rand um alle vier Seiten */
 		  margin-left:  auto;
-		  margin-right: auto;    /* Linke und rechte Margin auf "auto" setzen für Zentrierung. */
+		  margin-right: auto;                   /* Linke und rechte Margin auf "auto" setzen für Zentrierung. */
 		}		
 		
 		header {
@@ -43,29 +42,22 @@
 	            			
 			article {
 			  background: orange;
-			  width:      72.3404255319149%; /* =680/940*100 */
+			  width:      72.3404255319149%;
 			  float:      left;
-			}
-			
+			}			
 			aside {
 			  background:   white;
-			  width:        26.595744680851062%; /* =250/940*100 */
+			  width:        26.595744680851062%;
 			  float:        right;
-			  padding-left: 1.0638297872340425%; /* =10/940*100 */
+			  padding-left: 1.0638297872340425%;
 			}							
 		}
-
 		
 		@media screen and (max-width : 600px) {
 	            			
-			article {
-			  background: orange;
-			}
-			
-			aside {
-			  background: white;
-			}			
-      }
+			article { background: orange; }			  			
+			aside   { background: white;  }
+        }
 			
     -->
     </style>

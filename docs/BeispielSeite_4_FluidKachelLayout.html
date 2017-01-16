@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Flüssiges Kachel-Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <style type="text/css">
+    <!--
+
+        body { 
+          font-family: sans-serif;  /* ALLE Schriften ohne Serifen. */
+          background:  aqua; 
+        }
+
+        h1 {
+          background:     yellow;
+          text-align:     center;
+          padding-top:    5px;
+          padding-bottom: 5px;
+        }
+        
+        
+        /* Dieses Kachel-Layout funktioniert nur, wenn alle Kacheln gleich hoch sind. */
+        
+        /* Regeln, die für Kacheln immer gelten (d.h. unabhängig von Ergebnis Media-Query). */
+        .kachel {
+              background-color: orange;
+              box-sizing:       border-box;   /* Auf neues Box-Model umschalten. */
+              margin-left:      1%;           /* Außenabstand */
+              margin-bottom:    1%;
+              padding:          1%;           /* Innen-Abstand an allen vier Seiten. */
+              float:            left;
+        }
+
+        
+       /*
+        * Viewport-Breite >= 801px: Vier Kacheln pro Zeile. 
+        * 5 Zwischenabstände von 1% => 95% bleiben für die Kacheln übrig. 
+        */
+       @media screen and (min-width: 801px) { 
+        
+            .kachel {
+              width: 23.75%;  /* = 95%/4 */
+            }
+       }
+       
+       
+       /*
+        * 601px <= Viewport-Breite <= 800px: Drei Kacheln pro Zeile. 
+        * 4 Zwischenabstände von 1% => 96% bleiben für die Kacheln übrig. 
+        */
+       @media screen and (min-width: 601px) and (max-width: 800px) {
+       
+            .kachel {
+              width: 32%;    /* = 96%/3 */
+            }
+       }
+
+
+       /*
+        * 401px <= Viewport-Breite <= 600px: Zwei Kacheln pro Zeile. 
+        * 3 Zwischenabstände von 1% => 97% bleiben für die Kacheln übrig. 
+        */       
+       @media screen and (min-width: 401px) and (max-width: 600px) {
+       
+            .kachel {
+              width: 48.5%;    /* = 97%/2 */
+            }       
+       }
+       
+       
+       /*
+        * Viewport-Breite <= 400px: Eine Kachel pro Zeile. 
+        * 2 Zwischenabstände von 1 % => 98 % bleiben für die Kachel übrig.
+        */
+       @media screen and (max-width: 400px) {
+       
+            .kachel {
+              width: 98%;
+            }
+       }
+
+    -->
+    </style>
+</head>
+<body>
+    
+    <h1>Flüssiges Kachel-Layout</h1>
+    
+    <article class="kachel">
+      <h2>Kachel 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed 
+         eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad 
+         minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid 
+         ex ea commodi consequat.</p>
+    </article>
+
+    <article class="kachel">
+      <h2>Kachel 2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed 
+         eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad 
+         minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid 
+         ex ea commodi consequat.</p>
+    </article>
+    
+    <article class="kachel">
+      <h2>Kachel 3</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed 
+         eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad 
+         minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid 
+         ex ea commodi consequat.</p>
+    </article>  
+    
+    <article class="kachel">
+      <h2>Kachel 4</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed 
+         eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad 
+         minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid 
+         ex ea commodi consequat.</p>
+    </article>      
+
+    <article class="kachel">
+      <h2>Kachel 5</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed 
+         eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad 
+         minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid 
+         ex ea commodi consequat.</p>
+    </article>      
+    
+</body>
+</html>
