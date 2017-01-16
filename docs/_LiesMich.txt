@@ -3,6 +3,7 @@ Die HTML-Dokumente in diesem "docs/"-Unterordner sind mit
 Browser unter der folgenden URL aufgerufen werden:
 
   https://mdecker-mobilecomputing.github.io/RWD_mit_CSS/index.html
+  Kurz-URL: http://tinyurl.com/hk7rds7
 
 [1] In Repo-Einstellungen unter "GitHub Pages | Source" die Option "master branch/docs folder" wählen.
 
