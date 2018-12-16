@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<!-- 
+  08.03.2015: Version 1: Erste Version.
+-->
+<head>	
+    <title>Demo für CSS-Media-Types</title>
+	<meta charset="utf-8">  
+	
+    <style TYPE="text/css">
+    <!--
+
+		body { font-family: sans-serif; } /* ALLE Schriften ohne Serifen. */
+		
+		a, abbr { font-style: italic; }   /* Links und Abkürzungen in kursiver Schrift. */
+		
+        li { margin-bottom: 20px; }       /* Mehr Abstand zwischen den einzelnen Aufzählungs-Punkten. */
+
+				
+	    /* *** Jetzt kommen Media-Type-spezifische CSS-Regeln *** */
+				
+		@media screen {
+		  .nur_print { display: none; }		  		  
+		}		
+		
+		@media print {
+		  .nur_screen { display: none; }
+		  
+		  .nur_print { 
+		    padding:    10px;
+		    border:     1px dashed black;  /* gestrichelter Rand */
+			margin-top: 50px;
+		  }
+		}		
+		
+    -->
+    </style>
+</head>
+<body>
+  
+  <h1>Demo für CSS-Media-Types</h1>
+  
+  <p>
+    Diese HTML-Seite verwendet CSS-Media-Types. 
+    Es sind für die Ausgabe-Geräte <code>SCREEN</code> und <code>PRINT</code> unterschiedliche
+	CSS-Regeln definiert.
+  </p>
+
+  <div class="nur_screen">
+    <p>Das nachfolgende Bild wird im Druck-Modus ausgeblendet:</p>
+    <img src="Farbverlauf.png" alt="Bild mit Farbverlauf, das im Druck-Modus ausgeblendet wird" />
+  </div>
+  
+  <p>Weitere Informationen:</p>
+  <ul> 
+    <li><a href="http://www.w3.org/TR/CSS21/media.html"                   target="_blank" >Kapitel über CSS-Media-Types</a> in W3C-Standard CSS2.1.</li>
+	<li><a href="http://www.w3schools.com/css/css_mediatypes.asp"         target="_blank" >Erklärung zu CSS-Media-Types</a> auf <i>w3schools.com</i>.</li>
+	<li><a href="http://www.heise.de/ix/artikel/Allen-recht-1058764.html" target="_blank" >Artikel (Deutsch) aus iX 9/2010</a> über Media-Types und Media-Queries.</li>
+  </ul>
+  
+  <p class="nur_print">
+    Dieser Kasten wird nur im Druckmodus eingeblendet und könnte z.B. einen Copyright-Hinweis
+    oder die Internet-Adresse der HTML-Seite enthalten.
+  </p>
+  
+</body>
+
+	

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Flüssiges Layout mit Bild</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    <!--
+
+        body {
+          font-family: sans-serif;  /* ALLE Schriften ohne Serifen. */
+          background:  aqua;
+        }
+
+        #container, header, article, aside, footer {
+          box-sizing: border-box;
+        }
+
+        #container {
+          max-width:    960px;   /* "max-width" statt nur "width" */
+          background:   yellow;
+          padding:      1.0416666666666665%;    /* Rand um alle vier Seiten */
+          margin-left:  auto;
+          margin-right: auto;    /* Linke und rechte Margin auf "auto" setzen für Zentrierung. */
+        }
+
+        header {
+          width:      100%;
+          background: silver;
+        }
+
+        footer {
+          width:      100%;
+          clear:      both;
+          background: silver;
+        }
+
+
+        /* Media-Queries, Breakpoint bei 600px Viewport-Breite. */
+
+        @media screen and (min-width : 601px) {
+
+            article {
+              background: orange;
+              width:      72.3404255319149%; /* =680/940*100 */
+              float:      left;
+            }
+
+            aside {
+              background:   white;
+              width:        26.595744680851062%; /* =250/940*100 */
+              float:        right;
+              padding-left: 1.0638297872340425%; /* =10/940*100 */
+            }
+
+        }
+
+
+        @media screen and (max-width : 600px) {
+
+            article {
+              background: orange;
+            }
+
+            aside {
+              background: white;
+            }
+
+      }
+
+      img {
+        max-width: 100%;
+        height:    auto;
+      }
+
+    -->
+    </style>
+</head>
+<body>
+
+  <div id="container">
+
+    <header>Kopfzeile (Header)</header>
+
+    <article>
+      <h1>Flüssiges Layout mit flexiblem Bild</h1>
+
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipisici elit, sed
+       eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad
+       minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid
+       ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit
+       esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat
+       cupiditat non proident, sunt in culpa qui officia deserunt mollit anim
+       id est laborum.
+      </p>
+
+      <img src="bild_650x350.png" alt="Demo-Bild" width="650" height="350" />
+
+      <p>
+       Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+       esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+       vero eros et accumsan et iusto odio dignissim qui blandit praesent
+       luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+       nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+       volutpat.
+      </p>
+
+    </article>
+
+    <aside>
+      <p>Seiten-Kasten, in dem z.B. Web-Links oder Zusatz-Informationen stehen können.</p>
+      <p>
+       Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt 
+       ut labore et dolore magna aliqua.
+      </p>
+    </aside>
+
+    <footer>Fußzeile (Footer)</footer>
+
+  </div>
+
+
+</body></html>
