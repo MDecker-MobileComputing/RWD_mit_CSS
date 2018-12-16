@@ -1,57 +1,58 @@
 ﻿<!DOCTYPE html>
 <html lang="de">
-<head>	
+<head>
     <title>Demo für CSS-Media-Queries</title>
-	<meta charset="utf-8">  
-	
-    <style TYPE="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
     <!--
 
-	   body { font-family: sans-serif; } /* ALLE Schriften ohne Serifen. */
-		
-	   a, abbr { font-style: italic; }   /* Links und Abkürzungen in kursiver Schrift. */
-				
-				
-	   /* Ab jetzt kommen die Media Queries. 
-	    * Die Werte für die "Breakpoints" (Schwellenwerte) sind der folgenden Quelle entnommen:
-		* P. Müller: "Flexible Boxes" (Buch), 2003, Verlag: Galileo Computing, S. 303.
-		* Andere Breakpoint-Werte: 
-		* http://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints
-		*
-		* Farb-Namen nach der Color-Library "W3C Named Colors" auf 
-		* http://www.colorexplorer.com/colorlibraries.aspx
-    	*/
+       body { font-family: sans-serif; } /* ALLE Schriften ohne Serifen. */
 
-	   @media screen and (min-width : 1281px) {
-	     body { background-color: white; }
-       }		
-		
-	   @media screen and (min-width:1025px) and (max-width : 1280px) {
-	     body { background-color: yellow; }
-       }		
-		
-	   @media screen and (min-width:801px) and (max-width : 1024px) {
-	     body { background-color: orange; }
-       }				
+       a, abbr { font-style: italic; }   /* Links und Abkürzungen in kursiver Schrift. */
 
-	   @media screen and (min-width:321px) and (max-width : 800px) {
+
+       /* Ab jetzt kommen die Media Queries.
+        * Die Werte für die "Breakpoints" (Schwellenwerte) sind der folgenden Quelle entnommen:
+        * P. Müller: "Flexible Boxes" (Buch), 2003, Verlag: Galileo Computing, S. 303.
+        *
+        * Andere Breakpoint-Werte:
+        * http://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints
+        *
+        * Farb-Namen nach der Color-Library "W3C Named Colors" auf
+        * http://www.colorexplorer.com/colorlibraries.aspx
+        */
+
+       @media screen and (min-width : 1281px) {
+         body { background-color: white; }
+       }
+
+       @media screen and (min-width:1025px) and (max-width : 1280px) {
+         body { background-color: yellow; }
+       }
+
+       @media screen and (min-width:801px) and (max-width : 1024px) {
+         body { background-color: orange; }
+       }
+
+       @media screen and (min-width:321px) and (max-width : 800px) {
          body { background-color: aqua; }
-       }				
+       }
 
-	   @media screen and (max-width : 320px) {
-		 body { background-color: silver; }
-       }				
-	   
+       @media screen and (max-width : 320px) {
+         body { background-color: silver; }
+       }
+
     -->
     </style>
 </head>
 <body>
-  
+
   <h1>Demo für CSS-Media-Queries</h1>
 
   <p>
-    Diese HTML-Seite verwendet die mit Version 3 von CSS eingeführten <em>Media Queries</em>, 
+    Diese HTML-Seite verwendet die mit Version 3 von CSS eingeführten <em>Media Queries</em>,
     um in Abhängigkeit der aktuellen Viewport-Breite eine Hintergrund-Farbe auszuwählen.
   </p>
-    
+
 </body>
