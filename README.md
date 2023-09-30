@@ -1,4 +1,4 @@
-# Responsive Web Design with CSS #
+# Responsive Web Design (RWD) with CSS #
 
 <br>
 
