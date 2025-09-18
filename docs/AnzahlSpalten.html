@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Demo für Änderung Anzahl Spalten mit Media Queries</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    <!--
+
+      body { font-family: sans-serif; } /* ALLE Schriften ohne Serifen. */
+
+      h1 { text-align: center; }
+
+      .container {
+          display: flex;
+          flex-direction: row;
+          gap: 2em;
+          max-width: 900px;
+          margin: 0 auto;
+      }
+
+
+      /* Responsive: bei schmalem Viewport nur eine Spalte */
+      @media (max-width: 700px) {
+          .container {
+              flex-direction: column;
+              gap: 1em;
+          }
+      }
+
+    -->
+    </style>
+</head>
+<body>
+
+  <h1>Demo für Änderung Anzahl Spalten mit Media Queries</h1>
+
+    <div class="container">
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt dictum,
+          felis enim facilisis nulla, eu volutpat sapien purus a massa. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia curae.
+        </p>
+
+        <p>Ut scelerisque, urna eu pellentesque hendrerit, erat urna pretium magna, ut cursus massa urna ac
+           justo. Duis id orci ac sapien dictum dignissim. Morbi consequat, nisi id facilisis dictum, erat
+           arcu consequat nisl, eu blandit libero nulla sed arcu.
+        </p>
+
+    </div>
+
+</body>
